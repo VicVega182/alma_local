@@ -532,6 +532,91 @@ canvas {
   margin-top: 15px;
   color: white;
 }
+.types {
+  margin-bottom: 63px;
+}
+.types h2 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.13;
+  margin: 0 0 34px;
+}
+.types .types-list {
+  border-top: 1px solid #343f48;
+}
+.types .types-list .types-item {
+  padding: 28px 0 37px;
+  border-bottom: 1px solid #343f48;
+}
+.types .types-list .types-item .types-item__header {
+  letter-spacing: -0.4em;
+}
+.types .types-list .types-item .types-item__header .left,
+.types .types-list .types-item .types-item__header .right {
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: middle;
+}
+.types .types-list .types-item .types-item__header .left {
+  width: calc(100% - 188px);
+}
+.types .types-list .types-item .types-item__header .left .types-item__count {
+  font-size: 14px;
+  color: rgba(52, 63, 72, 0.7);
+  margin: 0 0 7px;
+  line-height: 1;
+}
+.types .types-list .types-item .types-item__header .left .types-item__count i {
+  display: inline-block;
+  letter-spacing: normal;
+  font-size: 24px;
+  line-height: 1;
+  margin-right: 6px;
+}
+.types .types-list .types-item .types-item__header .left .types-item__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 15px;
+}
+.types .types-list .types-item .types-item__header .left .types-item__link {
+  letter-spacing: -0.4em;
+}
+.types .types-list .types-item .types-item__header .left .types-item__link a {
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #343f48;
+  font-weight: 700;
+  text-decoration: underline;
+  letter-spacing: 0.9px;
+  line-height: 0.8;
+  font-size: 12px;
+}
+.types .types-list .types-item .types-item__header .left .types-item__link a + a {
+  margin-left: 20px;
+}
+.types .types-list .types-item .types-item__header .left .types-item__link a:hover {
+  text-decoration: none;
+  color: #00aaea;
+}
+.types .types-list .types-item .types-item__header .right a {
+  display: inline-block;
+  letter-spacing: normal;
+  border: 1px solid #343f48;
+  color: #343f48;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 0.8;
+  padding: 21px 34px 18px;
+}
+.types .types-list .types-item .types-item__header .right a:hover {
+  border-color: #00aaea;
+  background: #00aaea;
+  color: white;
+}
 .map {
   height: 400px;
 }

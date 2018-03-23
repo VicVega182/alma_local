@@ -492,6 +492,89 @@ canvas {
   }
 }
 
+.types {
+  margin-bottom: 63px;
+  h2 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.13;
+    margin: 0 0 34px;
+  }
+  .types-list {
+    border-top: 1px solid @black;
+    .types-item {
+      padding: 28px 0 37px;
+      border-bottom: 1px solid @black;
+      .types-item__header {
+        .row;
+        .left, .right {
+          .inline;
+          .middle;
+        }
+        .left {
+          width: ~'calc(100% - 188px)';
+          .types-item__count {
+            font-size: 14px;
+            color: fadeOut(@black, 30%);
+            margin: 0 0 7px;
+            line-height: 1;
+            i {
+              .inline;
+              font-size: 24px;
+              line-height: 1;
+              margin-right: 6px;
+            }
+          }
+          .types-item__title {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin:  0 0 15px;
+          }
+          .types-item__link {
+            .row;
+            a {
+              .inline;
+              .middle;
+              text-transform: uppercase;
+              color: @black;
+              font-weight: 700;
+              text-decoration: underline;
+              letter-spacing: 0.9px;
+              line-height: 0.8;
+              font-size: 12px;
+              & + a {
+                margin-left: 20px;
+              }
+              &:hover {
+                text-decoration: none;
+                color: @blue;
+              }
+            }
+          }
+        }
+        .right {
+          a {
+            .inline;
+            border: 1px solid @black;
+            color: @black;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 0.8;
+            padding: 21px 34px 18px;
+            &:hover {
+              border-color: @blue;
+              background: @blue;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .map {
   height: 400px;
 }
