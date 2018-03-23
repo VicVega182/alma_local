@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- SCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><!-- Jquery -->
+    <script src="js/what-input.js"></script><!-- Plugin for foundation -->
+    <script src="js/foundation.min.js"></script><!-- Foundation -->
+    <script src="js/jquery.mobile.custom.min.js"></script><!-- Mobile event -->
+    <script src="js/slick.min.js"></script><!-- Gallery image slider -->
+    <script src="js/device.min.js"></script><!-- Device detect -->
+    <script src="js/jquery.cookie.js"></script><!-- Jquery cookie -->
+    <script src="js/btnInput.js"></script><!-- Radio input style -->
+    <script src="js/ofi.min.js"></script><!-- Object fit for IE -->
+    <script src="js/jquery.fancybox.min.js"></script><!-- Fancybox -->
+    <script src="js/wow.min.js"></script><!-- WOW -->
+    <script src="js/demo/demo.js"></script>
+    <script src="js/demo/pixi.min.js"></script>
+    <script src="js/demo/TweenMax.min.js"></script>
+    <script src="js/demo/anim.js"></script>
+    <script src="js/demo/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+    <!-- SCRIPT END -->
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/btnInput.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- STYLE END -->
+</head>
+<body class="loading">
+<header class="header">
+    <div class="header-row">
+        <div class="container">
+            <div class="header-logo">
+                <a href="/"><img src="images/alma-logo-1.png"></a>
+            </div>
+            <div class="header-nav">
+                <nav>
+                    <ul>
+                        <li><a href="#">Объекты исследования</a></li>
+                        <li><a href="#">Виды анализа</a></li>
+                        <li><a href="#">Схема работ</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-phone">
+                <a href="tel:+78314157725"><i class="icon-phone"></i>+7 831 415 77 25</a>
+            </div>
+        </div>
+    </div>
+    <div class="header-title">
+        <h1>Анализ воды</h1>
+        <p>Нижний Новгород и Нижегородская область</p>
+        <a href="#">Заказать анализ</a>
+    </div>
+    <main class="site-wrapper">
+        <div class="content">
+            <div class="slide-wrapper">
+                <div class="slide-item">
+                    <img src="images/main-image.jpg" class="slide-item__image">
+                </div>
+            </div>
+        </div>
+    </main>
+</header>
+<div class="wrapper">
+    <div class="objects">
+        <div class="container">
+            <h2>Объекты исследования</h2>
+        </div>
+        <ul class="tabs" data-tabs id="objectRow-1" data-active-collapse="true">
+            <li class="tabs-title"><a href="#panel1" aria-selected="true"><i class="icon-skvajina"></i>Скважины</a>
+            </li>
+            <li class="tabs-title"><a href="#panel2"><i class="icon-kolodez"></i>Колодцы</a>
+            </li>
+        </ul>
+        <div class="tabs-content" data-tabs-content="objectRow-1">
+            <div class="tabs-panel" id="panel1">
+                <div class="container">
+                    <p>Вода бассейнов регулярно должна подвергаться контролю. Самой распространенной проблемой
+                        индивидуальных и общественных бассейнов является вода низкого качества. Даже вода
+                        централизованного
+                        источника водоснабжения (водопровод) не дает гарантии идеальной чистоты. Владельцы бассейнов
+                        часто
+                        сталкиваются с проблемами загрязнения воды, обусловленные цветностью, запаха, появления слизи на
+                        стенках, как следствие попадания и активной жизнедеятельности различных микроорганизмов. Для
+                        поддержания воды наилучшего качества, наши специалисты рекомендуют установку соответствующей
+                        системы
+                        водоподготовки, при этом регулярно проверять качество воды по химическим и микробиологическим
+                        показателям.</p>
+                    <a href="#" class="buttons">Заказать анализ</a>
+                </div>
+            </div>
+            <div class="tabs-panel" id="panel2">
+                <div class="container">
+                    <p>Вода бассейнов регулярно должна подвергаться контролю. Самой распространенной проблемой
+                        индивидуальных и общественных бассейнов является вода низкого качества. Даже вода
+                        централизованного
+                        источника водоснабжения (водопровод) не дает гарантии идеальной чистоты. Владельцы бассейнов
+                        часто
+                        сталкиваются с проблемами загрязнения воды, обусловленные цветностью, запаха, появления слизи на
+                        стенках, как следствие попадания и активной жизнедеятельности различных микроорганизмов. Для
+                        поддержания воды наилучшего качества, наши специалисты рекомендуют установку соответствующей
+                        системы
+                        водоподготовки, при этом регулярно проверять качество воды по химическим и микробиологическим
+                        показателям.</p>
+                </div>
+            </div>
+        </div>
+        <ul class="tabs" data-tabs id="objectRow-2" data-active-collapse="true">
+            <li class="tabs-title"><a href="#panel3" aria-selected="true"><i class="icon-basic"></i>Бассейны</a>
+            </li>
+            <li class="tabs-title"><a href="#panel4"><i class="icon-vodoem"></i>Водоемы</a>
+            </li>
+        </ul>
+        <div class="tabs-content" data-tabs-content="objectRow-2">
+            <div class="tabs-panel" id="panel3">
+                <div class="container">
+                    <p>Вода бассейнов регулярно должна подвергаться контролю. Самой распространенной проблемой
+                        индивидуальных и общественных бассейнов является вода низкого качества. Даже вода
+                        централизованного
+                        источника водоснабжения (водопровод) не дает гарантии идеальной чистоты. Владельцы бассейнов
+                        часто
+                        сталкиваются с проблемами загрязнения воды, обусловленные цветностью, запаха, появления слизи на
+                        стенках, как следствие попадания и активной жизнедеятельности различных микроорганизмов. Для
+                        поддержания воды наилучшего качества, наши специалисты рекомендуют установку соответствующей
+                        системы
+                        водоподготовки, при этом регулярно проверять качество воды по химическим и микробиологическим
+                        показателям.</p>
+                </div>
+            </div>
+            <div class="tabs-panel" id="panel4">
+                <div class="container">
+                    <p>Вода бассейнов регулярно должна подвергаться контролю. Самой распространенной проблемой
+                        индивидуальных и общественных бассейнов является вода низкого качества. Даже вода
+                        централизованного
+                        источника водоснабжения (водопровод) не дает гарантии идеальной чистоты. Владельцы бассейнов
+                        часто
+                        сталкиваются с проблемами загрязнения воды, обусловленные цветностью, запаха, появления слизи на
+                        стенках, как следствие попадания и активной жизнедеятельности различных микроорганизмов. Для
+                        поддержания воды наилучшего качества, наши специалисты рекомендуют установку соответствующей
+                        системы
+                        водоподготовки, при этом регулярно проверять качество воды по химическим и микробиологическим
+                        показателям.</p>
+                </div>
+            </div>
+        </div>
+        <ul class="tabs" data-tabs id="objectRow-3" data-active-collapse="true">
+            <li class="tabs-title"><a href="#panel5" aria-selected="true"><i class="icon-vodoprovod"></i>Водопровод</a>
+            </li>
+            <li class="tabs-title"><a href="#panel6"><i class="icon-butilka"></i>Вода в бутылках</a>
+            </li>
+        </ul>
+        <div class="tabs-content" data-tabs-content="objectRow-3">
+            <div class="tabs-panel" id="panel5">
+                <div class="container">
+                    <p>Вода бассейнов регулярно должна подвергаться контролю. Самой распространенной проблемой
+                        индивидуальных и общественных бассейнов является вода низкого качества. Даже вода
+                        централизованного
+                        источника водоснабжения (водопровод) не дает гарантии идеальной чистоты. Владельцы бассейнов
+                        часто
+                        сталкиваются с проблемами загрязнения воды, обусловленные цветностью, запаха, появления слизи на
+                        стенках, как следствие попадания и активной жизнедеятельности различных микроорганизмов. Для
+                        поддержания воды наилучшего качества, наши специалисты рекомендуют установку соответствующей
+                        системы
+                        водоподготовки, при этом регулярно проверять качество воды по химическим и микробиологическим
+                        показателям.</p>
+                </div>
+            </div>
+            <div class="tabs-panel" id="panel6">
+                <div class="container">
+                    <p>Вода бассейнов регулярно должна подвергаться контролю. Самой распространенной проблемой
+                        индивидуальных и общественных бассейнов является вода низкого качества. Даже вода
+                        централизованного
+                        источника водоснабжения (водопровод) не дает гарантии идеальной чистоты. Владельцы бассейнов
+                        часто
+                        сталкиваются с проблемами загрязнения воды, обусловленные цветностью, запаха, появления слизи на
+                        стенках, как следствие попадания и активной жизнедеятельности различных микроорганизмов. Для
+                        поддержания воды наилучшего качества, наши специалисты рекомендуют установку соответствующей
+                        системы
+                        водоподготовки, при этом регулярно проверять качество воды по химическим и микробиологическим
+                        показателям.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="why">
+        <div class="container">
+            <h2>Зачем нужен анализ воды?</h2>
+            <p>Очень часто распространенным стереотипом является мнение о том, что при отсутствии у воды неприятного
+                вкуса или запаха она совершенно безопасна и пригодна для питьевых нужд. Увы, это глубокое заблуждение.
+                Даже полезные компоненты, растворенные в воде, при достижении предельных концентраций, могут стать
+                опасными для здоровья. Анализ воды, проведенный в нашей компании, позволит Вам грамотно оценить
+                состояние воды, выработать рекомендации по улучшению ее качества. </p>
+        </div>
+        <div class="why-list" data-scrollbar>
+            <div class="why-list__item">
+                Для оценки качества питьевой воды городского водопровода
+            </div>
+            <div class="why-list__item">
+                Для оценки качества питьевой воды из скважин, колодцев, и прочего
+            </div>
+            <div class="why-list__item">
+                Для оценки качества питьевой воды городского водопровода
+            </div>
+            <div class="why-list__item">
+                Для оценки качества питьевой воды из скважин, колодцев, и прочего
+            </div>
+            <div class="why-list__item">
+                Для оценки качества питьевой воды городского водопровода
+            </div>
+            <div class="why-list__item">
+                Для оценки качества питьевой воды из скважин, колодцев, и прочего
+            </div>
+        </div>
+    </div>
+    <div class="reccomend">
+        <div class="container">
+            <div class="reccomend-wrapper">
+                <h3>Мы рекомендуем сделать анализ воды в следующих случаях</h3>
+                <ol>
+                    <li>Вода имеет несвойственный для Вас цвет, вкус или запах</li>
+                    <li>После бурения скважины, Вы желаете использовать воду для питьевых нужд при этом сохранить свое
+                        здоровье и здоровье Ваших членов семьи
+                    </li>
+                    <li>Вы хотите сохранить, защитить и продлить срок службы оборудования и техники</li>
+                    <li>У Вас регулярно возникают проблемы с кожей</li>
+                    <li>Поблизости с Вашим местом проживания находится промышленное предприятие</li>
+                </ol>
+                <a href="#">Заказать анализ</a>
+            </div>
+        </div>
+    </div>
+    <div class="types">
+        <div class="container">
+            <h2>Виды анализов</h2>
+            <div class="types-list">
+                <div class="types-item">
+                    <div class="types-item__header">
+                        <div class="left">
+                            <p class="types-item__count"><i class="icon-experiment"></i>18 показателей</p>
+                            <p class="types-item__title">Минимальный — 2900 руб.</p>
+                            <div class="types-item__link">
+                                <a href="#">Об анализе</a>
+                                <a href="#">Пример протокола</a>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <a href="#">Оставить заявку</a>
+                        </div>
+                    </div>
+                    <div class="types-item__body">
+                        <p>Расширенный Физико-химический анализ воды по 48 показателям, включающим органолептические
+                            (Мутность, Цветность, Запах), физико-химические (Электропроводность, pH) и химические
+                            (широкий перечень Катионов и Анионов, полный перечень Тяжелых металлов, обобщенные
+                            показатели) характеристики воды. Анализ проводится с использованием передовых методик и
+                            техник анализа, в том числе, фотометрии, ионной хроматографии, атомной
+                            абсорбции, масс-спектрометрии с индуктивно-связанной плазмой, рентгенофлуоресцентного
+                            анализа. Подходит для всех источников воды, в том числе, расположенных в районах с
+                            неблагоприятной экологической обстановкой. Позволяет оценить безопасность воды из колодца,
+                            скважины или водопровода для жизни и здоровья человека. </p>
+                        <div class="types-item__rules">
+                            <p>Правила отбора воды</p>
+                            <a href="#"><i class="icon-chemical"></i>Химический анализ</a>
+                            <a href="#"><i class="icon-biology"></i>Микробиологический анализ</a>
+                        </div>
+                        <p class="ul-title">Преимущества</p>
+                        <ol>
+                            <li>Отлично подходит для проверки централизованных любого источника водоснабжения.</li>
+                            <li>Позволят подобрать систему очистки воды от исчерпывающего перечня загрязнителей.</li>
+                            <li>Позволяет оценить качество фильтров и очистных систем, которые Вы уже используете.</li>
+                            <li>Высокая точность, подтвержденная Межлабораторными Сличительными Испытаниями, поверками и
+                                систематическим внутрилабораторным контролем.
+                            </li>
+                            <li>Включает в себя полный перечень Тяжелых металлов, опасных для здоровья человека.</li>
+                        </ol>
+                        <p class="ul-title">Недостатки</p>
+                        <ol>
+                            <li>Ввиду сложности аналитических работ могут быть увеличены сроки проведения испытаний с
+                                целью получения достоверных результатов.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="map" id="map"></div>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap,
+            myPlacemark;
+
+        function init() {
+            myMap = new ymaps.Map("map", {
+                center: [56.312450, 44.070225],
+                zoom: 15
+            });
+
+            myPlacemark = new ymaps.Placemark([56.312450, 44.070225], {
+                hintContent: 'г.Н.Новгород, ул. Родионова, 167 б, оф. 108'
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: 'images/pin.png',
+                iconImageSize: [41, 49],
+                iconImageOffset: [-4, -49]
+            });
+
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+</div>
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-logo">
+                <a href="/"><img src="images/alma-logo-1.png"></a>
+            </div>
+            <div class="footer-phone">
+                <a href="tel:+7 831 415 77 25"><i class="icon-phone"></i>+7 831 415 77 25</a>
+            </div>
+            <div class="footer-mail">
+                <a href="mailto:info@alma-nn.ru"><i class="icon-mail"></i>info@alma-nn.ru</a>
+            </div>
+            <div class="footer-place">
+                <a><i class="icon-map-pin"></i>г.Н.Новгород, ул. Родионова, 167 б, оф. 108</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+        <div class="container">
+            <div>© ООО «Альма» 2016-2018</div>
+            <div class="text-right"><a href="#">Политика конфиденциальности</a></div>
+        </div>
+    </div>
+</footer>
+<script>
+
+</script>
+</body>
+</html>
