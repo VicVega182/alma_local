@@ -617,6 +617,44 @@ canvas {
   background: #00aaea;
   color: white;
 }
+.types .types-list .types-item .types-item__body {
+  padding-top: 30px;
+}
+.types .types-list .types-item .types-item__body p {
+  font-size: 20px;
+  line-height: 1.8;
+}
+.types .types-list .types-item .types-item__body .types-item__rules {
+  margin-bottom: 37px;
+  letter-spacing: -0.4em;
+}
+.types .types-list .types-item .types-item__body .types-item__rules p {
+  font-weight: 700;
+  letter-spacing: normal;
+}
+.types .types-list .types-item .types-item__body .types-item__rules a {
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: top;
+  padding: 12px 28px;
+  text-transform: uppercase;
+  border: 1px solid #343f48;
+  color: #343f48;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.types .types-list .types-item .types-item__body .types-item__rules a + a {
+  margin-left: 20px;
+}
+.types .types-list .types-item .types-item__body .types-item__rules a i {
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: middle;
+  font-size: 26px;
+  margin-right: 9px;
+}
 .map {
   height: 400px;
 }
