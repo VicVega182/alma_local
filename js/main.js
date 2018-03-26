@@ -40,7 +40,7 @@ $(document).ready(function () {
         $("[data-scrollbar]").niceScroll();
     }
 
-    imagesLoaded(document.body, () => document.body.classList.remove('loading'));
+    /*imagesLoaded(document.body, () => document.body.classList.remove('loading'));
 
     var spriteImages 	= document.querySelectorAll( '.slide-item__image' );
     var spriteImagesSrc = [];
@@ -56,7 +56,11 @@ $(document).ready(function () {
         autoPlay: true,
         autoPlaySpeed: [10, 3],
         displaceScale: [200, 70]
-    });
+    });*/
 
+}).on('click', '.js__toggle-body', function () {
+    var $this = $(this);
+    $this.closest('.types-item').find('.types-item__body').slideToggle();
+    $this.closest('.types-item__header').toggleClass('is-active');
 });
 

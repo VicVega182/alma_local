@@ -442,7 +442,7 @@ canvas {
       }
       &:before {
         counter-increment: myCounter;
-        content:counter(myCounter)'.';
+        content: counter(myCounter) '.';
         position: absolute;
         top: -40px;
         left: 20px;
@@ -529,7 +529,7 @@ canvas {
             font-size: 30px;
             font-weight: 700;
             line-height: 1.4;
-            margin:  0 0 15px;
+            margin: 0 0 15px;
           }
           .types-item__link {
             .row;
@@ -570,6 +570,77 @@ canvas {
             }
           }
         }
+        &.is-active {
+          .types-item__title {
+            color: @blue;
+          }
+          .types-item__link {
+            .js__toggle-body {
+              color: fadeOut(@black, 60%);
+            }
+          }
+          .right {
+            a {
+              border-color: @blue;
+              color: @blue;
+            }
+          }
+        }
+      }
+      .types-item__body {
+        padding-top: 30px;
+        display: none;
+        p {
+          font-size: 20px;
+          line-height: 1.8;
+          &.ul-title {
+            font-weight: 700;
+            margin: 0 0 5px;
+          }
+        }
+        ol {
+          & + .ul-title {
+            margin-top: 30px;
+          }
+          li {
+            font-size: 20px;
+            line-height: 1.5;
+            margin: 0 0 15px;
+          }
+        }
+        .types-item__rules {
+          margin-bottom: 37px;
+          .row;
+          p {
+            font-weight: 700;
+            letter-spacing: normal;
+          }
+          a {
+            .inline;
+            .top;
+            padding: 12px 28px;
+            text-transform: uppercase;
+            border: 1px solid @black;
+            color: @black;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            line-height: 1;
+            & + a {
+              margin-left: 20px;
+            }
+            &:hover {
+              color: @blue;
+              border-color: @blue;
+            }
+            i {
+              .inline;
+              .middle;
+              font-size: 26px;
+              margin-right: 9px;
+            }
+          }
+        }
       }
     }
   }
@@ -577,6 +648,200 @@ canvas {
 
 .map {
   height: 400px;
+}
+
+.company {
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.73;
+    margin: 0 0 17px;
+  }
+  .company-list {
+    .row;
+    border-top: 1px solid fadeOut(@gray, 10%);
+    .company-item {
+      .inline;
+      .top;
+      position: relative;
+      width: 50%;
+      border: 1px solid fadeOut(@gray, 10%);
+      border-top: none;
+      &:nth-child(even) {
+        border-left: none;
+      }
+      .company-item__wrap {
+        max-width: 505px;
+        margin: 0 auto;
+        padding: 56px 0;
+        i {
+          font-size: 6px;
+        }
+        p {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 1.8;
+          margin: 0 0 3px;
+        }
+        span {
+          display: block;
+          font-size: 14px;
+          line-height: 1.71;
+          color: fadeOut(#000, 27%);
+        }
+      }
+      .company-item__hover {
+        position: absolute;
+        background: @blue;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        display: none;
+        .inside {
+          max-width: 505px;
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          p {
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.5;
+            color: white;
+            margin: 0 0 24px;
+          }
+          a {
+            .inline;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 19px 35px;
+            background: white;
+            line-height: 1;
+            font-weight: 700;
+            margin-top: 15px;
+            color: @blue;
+          }
+        }
+      }
+      &:hover {
+        .company-item__hover {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.works {
+  padding: 63px 0;
+  background: url(../images/scientist@2x.jpg) no-repeat transparent;
+  background-size: cover;
+  h2 {
+    margin: 0 0 24px 90px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.73;
+  }
+  a {
+    .inline;
+    margin-left: 90px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 19px 35px;
+    background: @blue;
+    line-height: 1;
+    font-weight: 700;
+    margin-top: 15px;
+    color: white;
+  }
+  .works-list {
+    .works-list__item {
+      .row;
+      margin-bottom: 24px;
+      max-width: 700px;
+      i, .works-list__item__txt {
+        .inline;
+        .middle;
+      }
+      i {
+        font-size: 55px;
+        width: 55px;
+        margin-right: 35px;
+      }
+      .works-list__item__txt {
+        width: ~'calc(100% - 90px)';
+        p {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 1.4;
+          margin: 0 0 6px;
+        }
+        span {
+          font-size: 14px;
+          line-height: 1.5;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.order {
+  padding: 70px 0 80px;
+  .container {
+    background: url("../images/flask.jpg") no-repeat transparent;
+    background-position: center right+20%;
+  }
+  .order-form {
+    max-width: 505px;
+    padding-left: 105px;
+  }
+  h2 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.13;
+    margin: 0 0 14px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 0 0 36px;
+  }
+  span {
+    display: block;
+    color: fadeOut(@black, 50%);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  form {
+    input {
+      .appearance;
+      border: 1px solid @gray;
+      box-shadow: none;
+      height: 50px;
+      padding: 0 10px;
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: 14px;
+      &[type='submit'] {
+        background: @blue;
+        border-color: @blue;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 50px;
+      }
+    }
+  }
 }
 
 /* Wrapper end */
