@@ -36,11 +36,11 @@ $(document).ready(function () {
     new WOW().init();
 
     /* Scrollbar */
-    if ($("[data-scrollbar]").ex()) {
+    if ($("[data-scrollbar]").ex() && !device.mobile()) {
         $("[data-scrollbar]").niceScroll();
     }
 
-    /*imagesLoaded(document.body, () => document.body.classList.remove('loading'));
+    imagesLoaded(document.body, () => document.body.classList.remove('loading'));
 
     var spriteImages 	= document.querySelectorAll( '.slide-item__image' );
     var spriteImagesSrc = [];
@@ -56,7 +56,7 @@ $(document).ready(function () {
         autoPlay: true,
         autoPlaySpeed: [10, 3],
         displaceScale: [200, 70]
-    });*/
+    });
 
 }).on('click', '.js__toggle-body', function () {
     var $this = $(this);
